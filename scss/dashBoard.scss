@@ -2,8 +2,16 @@
 
 $font-family-sans-serif: 'Montserrat', sans-serif;
 
-
-
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss"
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
+ul li:hover{
+  background-color: rgb(233, 231, 231);
+}
+
+#setting{
+  margin-top: 220px;
+}
+#setting:hover{
+  background-color: rgb(233, 231, 231);
+}
