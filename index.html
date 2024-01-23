@@ -41,16 +41,9 @@
           </div>
           <div class="col-7">
             <h5>Exam Schedule</h5>
-            <div class="border p-2">
-              <ul class="user-select-none list-unstyled d-flex justify-content-between align-items-center m-0">
-                <li id="examSubject">Physics</li>
-                <li id="examClass">Class 3</li>
-                <li id="examDay">Tuesday</li>
-                <li id="examDate">3 Dec 2020</li>
-                <li id="examTime">08:30 AM</li>
-                <button class="btn"><a class="bi bi-three-dots"></a></button>
-              </ul>
-            </div>
+              <table class="table">
+                <tbody id="examSchedule"></tbody>
+              </table>
           </div>
         </div>
       </div>
@@ -67,32 +60,32 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="">
+        <form id="examScheduleForm" action="">
           <div>
             <label class="form-label" for="">Subject</label>
-            <input class="form-control" type="text">
+            <input class="form-control" type="text" name="subjectInput">
           </div>
           <div class="mt-2">
             <label class="form-label" for="">Class</label>
-            <input class="form-control" type="text">
+            <input class="form-control" type="text" name="classInput">
           </div>
           <div class="mt-2">
             <label class="form-label" for="">Day</label>
-            <input class="form-control" type="text">
+            <input class="form-control" type="text" name="dayInput">
           </div>
           <div class="mt-2">
             <label class="form-label" for="">Date</label>
-            <input class="form-control" type="text">
+            <input class="form-control" type="text" name="dateInput">
           </div>
           <div class="mt-2">
             <label class="form-label" for="">Time</label>
-            <input class="form-control" type="text">
+            <input class="form-control" type="text" name="timeInput">
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" form="examScheduleForm" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
